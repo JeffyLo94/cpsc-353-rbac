@@ -8,14 +8,15 @@ A console based application of a simple RBAC model.
 Jeffrey Lo - jeffylo94@csu.fullerton.edu
 
 ### Usage :
-######Execution Checklist:
+###### Execution Checklist:
   * URA.txt and PRA.txt in same directory as jar (see METHOD 1)
   
   OR
   
   * filepath of directory containing URA.txt and PRA.txt (see METHOD 2)
   
-######Execution:
+###### Execution:
+
 Method 1 Execution:
 * Execute jar file from console (mac/linux: ```java -jar Rbac.jar``` )
 
@@ -24,7 +25,7 @@ Method 2 Execution:
       
       java -jar Rbac.jar /Users/jeffreylo/CSUFDevelopment/cpsc-353-rbac/inFiles/
 
-######Login
+###### Login
 
 * If RBAC initialized with text files will display:
 
@@ -36,7 +37,7 @@ Method 2 Execution:
       Correct input: ```Welcome exampleJohn!```
       Incorrect input: ```Error: user exampleJoe is not in the database!```
 
-######Commands once logged in:
+###### Commands once logged in:
 * View User Roles (roles)
 
         cmd> roles
