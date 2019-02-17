@@ -1,4 +1,4 @@
-# CPSC-353 Project 1 - RBAC Model
+# [CPSC-353 Project 1 - RBAC Model](https://github.com/JeffyLo94/cpsc-353-rbac)
 A console based application of a simple RBAC model.
   * Implemented in Java
   * Tested on Mac and Linux
