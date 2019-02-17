@@ -1,7 +1,7 @@
 # [CPSC-353 Project 1 - RBAC Model](https://github.com/JeffyLo94/cpsc-353-rbac)
 A console based application of a simple RBAC model.
   * Implemented in Java
-  * Tested on Mac and Linux
+  * Tested on Mac, Linux, and Windows
   * Extra Credit not implemented
 
 ### Author:
@@ -18,7 +18,7 @@ Jeffrey Lo - jeffylo94@csu.fullerton.edu
 ###### Execution:
 
 Method 1 Execution:
-* Execute jar file from console (mac/linux: ```java -jar Rbac.jar``` )
+* Execute jar file from console (```java -jar Rbac.jar``` )
 
 Method 2 Execution:
 * Execute jar from console with path as argument
