@@ -48,7 +48,7 @@ public class Rbac {
             //check if name exists
             setMapValues(name, role, userRoleMap);
         }
-        printUserRoles();
+//        printUserRoles();
 
         //PRA processing
         fileIn = new FileReader(praDir);
@@ -60,7 +60,7 @@ public class Rbac {
 
             setMapValues(role, permission, permissionsMap);
         }
-        printPermissions();
+//        printPermissions();
 
     }
 
@@ -170,6 +170,7 @@ class main {
 
         try{
             RBAC.readRBACFiles(URA_FILE,PRA_FILE);
+            print("RBAC initialized");
         } catch (Exception e){
             print("Error - Failed to initialize RBAC - could not read URA.txt and/or PRA.txt");
 
