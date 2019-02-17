@@ -20,7 +20,7 @@ public class Rbac {
     public String lastRoleGrantedPermition = "";
 
     Rbac(){
-        System.out.print("RBAC initialized");
+//        System.out.print("RBAC initialized");
         userRoleMap = new HashMap<String, ArrayList<String>>();
         permissionsMap = new HashMap<String, ArrayList<String>>();
     }
@@ -149,10 +149,11 @@ class main {
         final Rbac RBAC = new Rbac();
         String URA_FILE = "URA.txt";
         String PRA_FILE = "PRA.txt";
+        boolean rbacFailed = false;
 
         if(args.length != 0){
-            if (args[1] instanceof String){
-                String path = args[1];
+            if (args[0] instanceof String){
+                String path = args[0];
                 URA_FILE = path + URA_FILE;
                 PRA_FILE = path + PRA_FILE;
             } else{
@@ -173,7 +174,7 @@ class main {
             print("RBAC initialized");
         } catch (Exception e){
             print("Error - Failed to initialize RBAC - could not read URA.txt and/or PRA.txt");
-
+            rbacFailed = true;
         }
 
         //Enter data using BufferReader
@@ -182,7 +183,7 @@ class main {
 
         boolean loggedIn = false;
 
-        while(!loggedIn){
+        while(!loggedIn && !rbacFailed){
             //login
             System.out.print("login: ");
             String name = reader.readLine();
